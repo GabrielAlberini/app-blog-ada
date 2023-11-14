@@ -12,7 +12,7 @@ export const Home = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1337/api/posts?populate=*"
+          "https://api-blog-ada.onrender.com/api/posts?populate=*"
         );
 
         const mappedData = response.data.data.map((item) => ({

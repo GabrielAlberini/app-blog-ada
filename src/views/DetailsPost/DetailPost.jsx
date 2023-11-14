@@ -4,7 +4,7 @@ import axios from "axios";
 import { Layout } from "../../components/Layout/Layout";
 import { Loader } from "../../components/Loader/Loader";
 
-const PostDetail = () => {
+const DetailPost = () => {
   const { slug } = useParams();
   const [post, setPost] = useState(null);
   const [loader, setLoader] = useState(true);
@@ -12,12 +12,15 @@ const PostDetail = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get("http://localhost:1337/api/posts", {
-          params: {
-            populate: "*",
-            _where: [{ id: slug }],
-          },
-        });
+        const response = await axios.get(
+          "https://api-blog-ada.onrender.com/api/posts",
+          {
+            params: {
+              populate: "*",
+              _where: [{ id: slug }],
+            },
+          }
+        );
 
         const item = response.data.data[0];
 
@@ -76,4 +79,4 @@ const PostDetail = () => {
   );
 };
 
-export { PostDetail };
+export { DetailPost };
