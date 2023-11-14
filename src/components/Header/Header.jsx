@@ -9,7 +9,10 @@ export const Header = () => {
             <Link className="navbar-item" to="/">
               Blog App
             </Link>
-            <a className="navbar-item" href="http://localhost:1337/admin">
+            <a
+              className="navbar-item"
+              href="https://api-blog-ada.onrender.com/admin"
+            >
               Admin
             </a>
           </div>
