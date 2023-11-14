@@ -4,7 +4,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="content has-text-centered">
         <p>
-          <strong>Mi Aplicación React</strong> © 2023. Todos los derechos
+          <strong>ADA Blog | React + Strapi</strong> © 2023. Todos los derechos
           reservados.
         </p>
       </div>
