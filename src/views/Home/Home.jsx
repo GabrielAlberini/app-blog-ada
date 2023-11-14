@@ -37,7 +37,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <Layout>
+    <Layout data={data}>
       <div className="container">
         {loader ? (
           <Loader />
