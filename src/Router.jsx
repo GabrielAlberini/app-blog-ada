@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "../views/Home/Home";
-import { DetailPost } from "../views/DetailsPost/DetailPost";
+import { Home } from "./views/Home/Home";
+import { DetailPost } from "./views/DetailsPost/DetailPost";
 
 const Router = () => {
   return (

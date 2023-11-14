@@ -1,4 +1,4 @@
-import { Router } from "./router/Router";
+import { Router } from "./Router";
 import "bulma/css/bulma.min.css";
 
 function App() {
